@@ -23,13 +23,11 @@ public class MainTest {
                     applicationContext.getBean(AnimalsCage.class);
             if (i == 0) {
                 time = bean.getTimer().getTime();
-
                 continue;
             }
             Assert.assertEquals("Тест провален, не корректная реализация бинов.", time, bean.getTimer().getTime().longValue());
-
-
             System.out.println(time);
         }
     }
 }
+
